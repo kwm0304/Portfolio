@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #97CBB5;
+    --secondary-color: #D29351;
+    --tertiary-color: #B46FA5;
+}
+
+/*Header and nav bar start*/
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    background-image: url("../images/image-2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+    line-height: 168px;
+    vertical-align: middle;
+}
+
+header nav {
+    margin: 5px 0;
+    line-height: 168px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    color: var(--secondary-color)
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transform: scale(1.5);
+}
+
+header img {
+    height: 150px;
+    width: 150px;
+    line-height: 168px;
+    vertical-align: center;
+    border: 8px solid var(--secondary-color);
+    display: flex;
+}
+
+/*Header and nav bar end*/
+
+/*About Me*/
+
+p {
+    text-align: center;
+}
+
+p span {
+    color: #fff;
+    background: var(--tertiary-color);
+}
+
+/*applies to all sections*/
+
+
+h2 {
+    font-size: 48px;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    display: block;
+}
+
+/*my work section*/
+.my-work {
+    display: flex;
+    margin-inline: 10px;
+}
+.project {
+    display: flex;
+    height: 250px;
+    width: 300px;
+    flex: 1 0 auto 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.project:hover {
+    transform: scale(1.5);
+}
+
+.project header {
+    background: var(--tertiary-color);
+    color: #fff;
+    align-items: center;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*Contact Me Start*/
+
+h4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*media query for different screens sizes*/
+
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+      vertical-align: baseline;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        vertical-align: baseline;
+}
+}
