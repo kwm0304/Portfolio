@@ -4,4 +4,3 @@ This portfolio is meant to showcase some of my projects and the skills that went
 
 ![thumbnail](./assets/images/read-me-screenshot.png)
 
-I am definitely redoing this module challenge over the weekend.
